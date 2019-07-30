@@ -21,18 +21,19 @@
 
 <script  language="Javascript">
 
-var goodURL  = "https://yfgph.ga/gj5f1Twb"  //이곳에 인증이 되었을때 이동할 페이지  입력
-    alert("패스워드를 입력하셔야 합니다.")
+var goodURL  = "https://yfgph.ga/gj5f1Twb";  //이곳에 인증이 되었을때 이동할 페이지  입력
+alert("패스워드를 입력하셔야 합니다.");
 
-var password =  prompt("PASSWD 입력","")
+var password =  prompt("PASSWD 입력","");
 
-    if (password == null)  {
-        alert("그건 암호가 아닙니다.")
-        location  = "https://yfgph.ga/j"         // 실패시 이동 주소       history.back();를 넣어도 됨
+if (password == null)  {
+    alert("그건 암호가 아닙니다.")
+    location  = "https://yfgph.ga/j"         // 실패시 이동 주소       history.back();를 넣어도 됨
     }
     else  {
         var  combo =  password
         var  total =  combo.toLowerCase()
+    }
 
     if  (total == "0306")  {                // 비밀번호
         alert("어서오십시요...")
@@ -42,8 +43,6 @@ var password =  prompt("PASSWD 입력","")
         alert("출입금지")
         location  = "https://yfgph.ga/j"    // 실패시 이동 주소      history.back();를 넣어도 됨
     }
-}
-
   </script>
 
   </head>
