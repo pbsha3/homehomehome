@@ -1,0 +1,78 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>J의 미션</title>
+    
+    <!-- 부트스트랩 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  </head>
+
+
+<body>
+
+<div class="jumbotron jumbotron-fluid text-center" style="background-color: black !important;">
+  <div class="container-fluid">
+    <img src="Global-Spy1.jpg" class="mx-auto d-block rounded" alt="Cinque Terre">
+    <h1>Code name -J-</h1> 
+    <p style="color: white !important;">3조의 세번째 미션</p>
+  </div>
+</div>
+  <div class="container-fluid text-center">
+   <p>이스라엘 백성들이 행군하는데 제일 앞장서서 나갔던 것은 무엇입니까?(3장14절)</p>
+   <p>여리고성에서 획득한 물건을 하나님께 바쳤는데 그것을 훔쳐간 사람은 누구입니까?(7장34절)</p>
+   <p>이곳 사람들은 이스라엘이 여리고와 아이 성의 대한 소식을 듣고 거짓말을 해서 이스라엘과 화친하게 되었습니다. 이곳은 어디입니까?(9장49절)</p>
+   <p>모세가 죽은 후 하나님은 여호수아에게 나타나셔서 어디를 건너서 하나님이 예비하신 땅으로 가라고 말씀하셨습니까?(1장1절)</p>
+   <p>여리고 성에서 이스라엘 정탐꾼을 숨겨준 사람은 누구입니까?(2장7절)</p> 
+   <br><br>
+   <p>위 문항들의 답을 차례로 여백없이 연결해서 아래 칸에 입력하세요.</p>
+     <form>    
+        <input type="text">
+        <button type="submit">제출</button>
+    </form>
+
+    <p id="text-output"></p>
+
+   </div> 
+   
+
+  </body>
+   <script> 
+    
+        // Attach an event for when the user submits the form
+        $('form').on('submit', function(event) {
+            
+            // Prevent the page from reloading
+            event.preventDefault();
+            
+            // Set the text-output span to the value of the first input
+            var $input = $(this).find('input');
+            var input = $input.val();
+            if(input == "언약궤아간기브온요단강라합"){
+              $('#text-output').text("3조의 최종미션 전달자의 세번째 특징은 시편131편을 좋아합니다. 최종미션 전달자와 주고받을 암호는 총 3조각이며 마지막 부분은 ㄷㅅ 입니다.");  
+            } else {
+              $('#text-output').text("글쎄요. 원하는 답이 아닙니다.");  
+
+             }
+
+            
+        });
+        
+    </script>
+
+
+
+
+</html>
